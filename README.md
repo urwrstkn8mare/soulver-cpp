@@ -57,6 +57,11 @@ int main() {
 }
 ```
 
+Compile with:
+
+```
+g++ main.cpp -lSoulverWrapper -o test
+
 # Vicinae usage
 
 Newer versions of Vicinae will try to load the `libSoulverWrapper.so` shared library from standard system locations. If it succeeds, then the SoulverCore wrapper will become

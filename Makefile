@@ -1,4 +1,4 @@
-all:
+all: clean
 	cmake -GNinja -B build
 	cmake --build build
 .PHONY: all
@@ -15,6 +15,3 @@ repl:
 clean:
 	rm -rf build
 .PHONY: clean
-
-re: clean all
-.PHONY: re
