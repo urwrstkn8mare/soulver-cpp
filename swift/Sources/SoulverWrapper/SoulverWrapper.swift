@@ -18,9 +18,9 @@ private var globalCalculator: Calculator?
 
 @MainActor
 @_cdecl("soulver_initialize")
-public func initialize_soulver(resourcesPath: UnsafePointer<CChar>) {
+public func initialize_soulver(resourcesPath: UnsafePointer<CChar>) -> Bool {
     guard globalCalculator == nil else {
-        return
+        return true;
     }
 
     let pathString = String(cString: resourcesPath)
@@ -28,7 +28,7 @@ public func initialize_soulver(resourcesPath: UnsafePointer<CChar>) {
     
     guard SoulverCore.ResourceBundle(url: resourcesURL) != nil else {
         //print("❌ Soulver Wrapper: Failed to create SoulverCore.ResourceBundle from path: \(pathString)")
-        return
+        return false;
     }
 
     var customization = EngineCustomization.standard
@@ -39,6 +39,8 @@ public func initialize_soulver(resourcesPath: UnsafePointer<CChar>) {
     currencyProvider.startUpdating()
     
     globalCalculator = Calculator(customization: customization)
+
+    return true;
 }
 
 @MainActor
