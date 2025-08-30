@@ -47,7 +47,7 @@ install(FILES src/core.hpp
 	COMPONENT Development
 )
 
-set(SOULVER_SHARE ${CMAKE_INSTALL_PREFIX}/share/${SHARED_LIB})
+set(SOULVER_SHARE ${CMAKE_INSTALL_PREFIX}/share/soulver-core)
 
 make_directory(${SOULVER_SHARE})
 
