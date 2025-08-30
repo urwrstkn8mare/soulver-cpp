@@ -37,7 +37,7 @@ make repl
 
 Or you can build this example program:
 
-```
+```cpp
 #include <iostream>
 #include <print>
 #include <soulver-cpp/core.hpp>
@@ -55,7 +55,6 @@ int main() {
 
   std::println("{} ({})", data.value, data.type);
 }
-
 ```
 
 # Vicinae usage
