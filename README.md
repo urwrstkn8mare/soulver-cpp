@@ -1,4 +1,4 @@
-# soulver-cpp (WIP)
+# soulver-cpp
 
 Simple C++ bindings for the [SoulverCore](https://github.com/soulverteam/SoulverCore) Swift library.
 
