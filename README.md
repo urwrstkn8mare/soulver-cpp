@@ -59,8 +59,9 @@ int main() {
 
 Compile with:
 
-```
+```bash
 g++ main.cpp -lSoulverWrapper -o test
+```
 
 # Vicinae usage
 
