@@ -101,8 +101,3 @@ public func evaluate(expression: UnsafePointer<CChar>) -> UnsafeMutablePointer<C
     }
     return nil
 }
-
-@_cdecl("soulver_free_string")
-public func free_string(ptr: UnsafeMutablePointer<CChar>?) {
-    free(ptr)
-}

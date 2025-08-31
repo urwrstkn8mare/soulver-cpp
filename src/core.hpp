@@ -4,13 +4,11 @@
 #include <nlohmann/json.hpp>
 #include <optional>
 #include <print>
-#include <ranges>
 #include <string>
 
 extern "C" {
-void soulver_initialize(const char *resourcesPath);
+bool soulver_initialize(const char *resourcesPath);
 char *soulver_evaluate(const char *expression);
-void soulver_free_string(char *ptr);
 bool soulver_is_initialized();
 }
 
