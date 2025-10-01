@@ -30,7 +30,7 @@ sudo make install
 ```
 
 > [!WARNING]
-> WARNING: make sure that `/usr/local/lib` is in `$LD_LIBRARY_PATH` and `$LD_LIBRARY_PATH` is in `$LD_LIBRARY_PATH` or Vicinae may not be able to find `libSoulverWrapper.so` or its resources.
+> Please make sure that `/usr/local/lib` is in `$LD_LIBRARY_PATH` and `/usr/local/share` is in `$XDG_DATA_DIRS` or Vicinae may not be able to find `libSoulverWrapper.so` or its resources.
 
 If all of the above went well, you should be able to build the example repl:
 
